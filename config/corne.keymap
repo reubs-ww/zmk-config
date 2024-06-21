@@ -50,7 +50,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &kp F12       &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
                                     &trans        &trans        &trans          &trans        &trans        &trans
@@ -59,10 +59,10 @@
 
         movement_layer {
             bindings = <
-&bt BT_SEL 0  &trans     &trans    &trans     &trans    &trans    &trans  &trans    &trans    &trans  &trans     &trans
-&bt BT_SEL 1  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans        &trans     &trans    &trans     &trans    &trans    &trans  &trans    &trans    &trans  &trans     &trans
-                                   &trans     &trans    &trans    &trans  &trans    &trans
+&bt BT_SEL 0  &trans     &trans    &trans     &trans    &trans    &trans    &trans  &trans    &trans     &trans  &trans
+&bt BT_SEL 1  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans        &trans     &trans    &trans     &trans    &trans    &trans    &trans  &trans    &trans     &trans  &trans
+                                   &trans     &trans    &trans    &trans    &trans  &trans
             >;
         };
     };

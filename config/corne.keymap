@@ -59,10 +59,10 @@
 
         movement_layer {
             bindings = <
-&bt BT_SEL 0  &trans     &trans    &trans     &trans    &trans    &trans          &trans        &trans          &trans           &trans  &trans
-&bt BT_SEL 1  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans        &trans     &trans    &trans     &trans    &trans    &trans          &trans        &trans          &trans           &trans  &trans
-                                   &trans     &trans    &trans    &trans          &trans        &trans
+&bt BT_SEL 0  &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &trans
+&bt BT_SEL 1  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans        &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &trans
+                                   &trans     &trans    &trans    &trans          &trans          &trans
             >;
         };
     };

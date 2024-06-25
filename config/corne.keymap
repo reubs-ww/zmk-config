@@ -8,9 +8,19 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { tapping-term-ms = <400>; };
-
 / {
+  behaviors {
+    hm: homerow_mods {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      quick-tap-ms = <100>;
+      require-prior-idle-ms = <100>;
+      flavor = "tap-preferred";
+      bindings = <&kp>, <&kp>;
+    };
+  };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -23,7 +33,7 @@
 
             bindings = <
 &kp TAB     &kp Q        &kp W       &kp E         &kp R       &kp T      &kp Y      &kp U       &kp I         &kp O       &kp P           &kp C_VOL_UP
-&kp ESC     &mt LCTRL A  &mt LALT S  &mt LSHIFT D  &mt LGUI F  &kp G      &kp H      &mt RGUI J  &mt RSHIFT K  &mt RALT L  &mt RCTRL BSPC  &kp CAPS
+&kp ESC     &hm LCTRL A  &hm LALT S  &hm LSHIFT D  &hm LGUI F  &kp G      &kp H      &hm RGUI J  &hm RSHIFT K  &hm RALT L  &hm RCTRL BSPC  &kp CAPS
 &kp LSHIFT  &kp Z        &kp X       &kp C         &kp V       &kp B      &kp N      &kp M       &kp COMMA     &kp DOT     &kp DEL         &kp C_VOL_DN
                                      &mo 2         &kp LCMD    &kp RET    &kp SPACE  &mo 1       &mo 3
             >;

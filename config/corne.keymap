@@ -25,7 +25,7 @@
 &kp TAB     &kp Q        &kp W       &kp E         &kp R       &kp T      &kp Y      &kp U       &kp I         &kp O       &kp P           &kp C_VOL_UP
 &kp ESC     &mt LCTRL A  &mt LALT S  &mt LSHIFT D  &mt LGUI F  &kp G      &kp H      &mt RGUI J  &mt RSHIFT K  &mt RALT L  &mt RCTRL BSPC  &kp CAPS
 &kp LSHIFT  &kp Z        &kp X       &kp C         &kp V       &kp B      &kp N      &kp M       &kp COMMA     &kp DOT     &kp DEL         &kp C_VOL_DN
-                                     &mo 3         &kp LCMD    &kp RET    &kp SPACE  &mo 1       &mo 2
+                                     &mo 2         &kp LCMD    &kp RET    &kp SPACE  &mo 1       &mo 3
             >;
         };
 
@@ -52,7 +52,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &kp C_NEXT
+&trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
 &trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &trans
                                     &trans        &trans        &trans          &trans        &trans        &trans
@@ -61,9 +61,9 @@
 
         movement_layer {
             bindings = <
-&bt BT_SEL 0  &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &trans
-&bt BT_SEL 1  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans        &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &trans
+&bt BT_SEL 0  &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &kp C_NEXT  &trans
+&bt BT_SEL 1  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans      &trans
+&trans        &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans      &trans
                                    &trans     &trans    &trans    &trans          &trans          &trans
             >;
         };

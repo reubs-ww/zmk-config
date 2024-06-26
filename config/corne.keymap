@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -72,10 +71,10 @@
 
         movement_layer {
             bindings = <
-&bt BT_SEL 0       &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &kp C_NEXT
-&bt BT_SEL 1       &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &kp C_PP
-&ext_power EP_OFF  &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &trans
-                                        &trans     &trans    &trans    &trans          &trans          &trans
+&bt BT_SEL 0  &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &kp C_NEXT
+&bt BT_SEL 1  &kp LCTRL  &kp LALT  &kp LSHFT  &kp LGUI  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &kp C_PP
+&trans        &trans     &trans    &trans     &trans    &trans    &trans          &trans          &trans        &trans           &trans  &trans
+                                   &trans     &trans    &trans    &trans          &trans          &trans
             >;
         };
     };
